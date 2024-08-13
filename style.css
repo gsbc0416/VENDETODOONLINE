@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
   /* dandole diseño a la pagina en la parte
   de arriba donde esta el titulo y menu*/
+  
 
   
 header {
@@ -45,23 +46,23 @@ nav ul li a:hover {
 .dropdown {
 	position: none;
 }
-.dropdown-content {
+.main-header__container {
 	display: none;
 	position: absolute;
 	background-color: #333;
 	z-index: 1;
 }
-.dropdown-content li {
+.main-header__container li {
 	display: block;
 }/*dar ancho y color de la barra del menu despegable*/
-.dropdown-content li a {
+.main-header__container li a {
 	color: white;
 	padding: 7px 6px;
 	text-decoration: none;
 	display: block;
 	text-align: center;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover .main-header__container {
 	display: block;
 }
 	
@@ -234,4 +235,87 @@ footer {
    
 }
     /*diseño a productos de la tienda*/
-
+@media screen and (min-width:1024px) { 
+        .container{
+          width: 1000px;
+          margin: auto;
+        }
+        .icon-menu {
+          display: none;
+        }
+        .main-header .container--flex{
+          display: flex;
+          align-items: center;
+        }
+        .container-submenu {
+          position: relative;
+        }
+        .menu__link:hover{
+          background: #f60404;
+        }
+        .submenu {
+          position: absolute;
+          top: 60px;
+          width: 200px;
+          overflow: visible;
+          z-index: 0;
+          visibility: hidden;
+            
+        }
+        /*aqui se le da visivilidad al submenu para que se vea al pasar el puntero*/
+        .container-submenu:hover .submenu {
+          opacity: 2;
+          visibility: visible;
+        }
+        .main-header__container{
+          flex-wrap: wrap;
+          align-content: flex-start;
+        }
+        .main-header__txt{
+          width: 100%;
+        }
+        .main-header__container:nth-child(2){
+          order: -1;
+          width: 25%;
+        }
+        .main-header__container:nth-child(3){
+          width: 25%;
+          padding: 0 20px;
+        }
+        .main-header__title {
+          width: 100%;
+          font-size: 4em;
+          margin: 0;
+          border-bottom: 1px solid #ccc;
+        }
+        .main-header__link {
+          margin-bottom: 20px;
+        }
+        .main-header__btn{
+          width: 130px;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+        .main-header__input{
+          width: 85%;
+        }
+        .main-nav{
+          visibility: visible;
+          opacity: 1;
+          width: 100%;
+          margin-top: 20px;
+        }
+        .menu {
+          position: static;
+          width: 100%;
+          display: flex;
+          background: none;
+        }
+        .menu__link{
+          color: #fd0909;
+        }
+        .menu__link:hover{
+          background: #064fed;
+          color: rgb(15, 233, 48);
+        }
+}
