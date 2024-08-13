@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VENDETODOONLNE</title>
+</head>
+<body>
+<header>
+    <h1>VENDETODOONLINE</h1>
+    
+    <nav> 
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Productos</a>
+                <div class= "dropdown-content">
+                   <a href="#">Tecnologia</a>
+                   <a href="#">Ropa</a>
+                   <a href="#">Papeleria</a>
+                   <a href="#">Computacion</a>
+                </div>
+            </li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="#">Carrito</a></li>
+            <li><a href="index.html">Iniciar Sesión</a></li>
+      <ul>
+    </nav>
+</header>
+
+<!-- ingresan productos para que se vean en varias columnas y sus imagenes. -->
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 1</p>
+                    <span class="precio">$ 1.300.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <p class="descripcion" id>COMPUTADODOR 2 </p>
+                    <span class="precio">$ 1.800.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 3 </p>
+                    <span class="precio">$ 3.600.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 4</p>
+                    <span class="precio">$ 1.800.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/5.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 5</p>
+                    <span class="precio">$ 1.400.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/6.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 6</p>
+                    <span class="precio">$ 2.000.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/7.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 7</p>
+                    <span class="precio">$ 2.500.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/8.jpg" alt="">
+                    </div>
+                    <p class="descripcion">COMPUTADOR 8</p>
+                    <span class="precio">$ 1.800.000</span>
+                </div>
+            </div> 
+        </div>
+                 <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.jpg" alt="" id="img">
+                <h2 id="modelo">COMPUTADOR 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+                <span class="precio" id="precio">$ 1.300.000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">COLOR</label>
+                        <select name="" id="">
+                            <option value="">ROJO</option>
+							<option value="">BLANCO</option>
+							<option value="">NEGRO</option>
+							<option value="">AZUL</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+        <footer>
+            ¡Bienvenido a nuestra tienda en línea!
+            <p>Encuentra los mejores productos al mejor precio.</p>
+            <p>&copy; 2024 VENDETOTOONLINE. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+        
+</body>
+</html>
