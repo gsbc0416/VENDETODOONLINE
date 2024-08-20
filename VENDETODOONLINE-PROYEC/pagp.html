@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <title>VENDETODOONLNE</title>
+
+</head>
+
+<header class="main-header">
+  <div class="container container--flex">
+    <div class="main-header__container">
+      <h1 class="main-header__title">VENDETODOONLINE</h1>
+      <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+      <nav class="main-nav" id="main-nav">
+        <ul class="menu">
+          <!--aqui se comienza a diseñar el menu--->
+          <li class="menu__item"><a href="venta.html" class="menu__link">VENTA</a></li>
+          <li class="menu__item"><a href="empleado.html" class="menu__link">EMPLEADO</a></li>
+          <li class="menu__item"><a href="producto.html" class="menu__link">PRODUCTO</a></li>
+          <li class="menu__item"><a href="proveedor.html" class="menu__link">PROVEEDOR</a></li>
+          <!--aqui se comienza a diseñar el submenu--->
+          <li class="menu__item container-submenu"><a href="#" class="menu__link submenu.btn">TIENDA<i
+                class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+              <li class="menu__item"><a href="" class="menu__link">NOSOTROS</a></li>
+              <li class="menu__item"><a href="" class="menu__link">DESCUENTOS</a></li>
+            </ul>
+          </li>
+
+          <!--creamos un link al formulario de contacto para descuento--->
+          <li class="menu__item"><a href="usuario.html" class="menu__link">USUARIO</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="main-header__container">
+      <span class="main-header__txt">Necesitas ayuda</span>
+      <p class="main-header__txt"><i class="fas fa-phone"></i> CEL 12345678099</p>
+    </div>
+    <!--le damos dieño  a los menu--->
+   <!--los iconos salen de la pagina https://fontawesome.com/v5/icons/shopping-cart?s=solid-->
+    <div class="main-header__container">
+      <a href="index.html" class="main-header__link"><i class="fas fa-user"></i></a>
+      <a href="#" class="main-header__btn">Mi carrito<i class="fas fa-shopping-cart"></i></a>
+      <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+    </div>
+  </div>
+</header>
+<!--aqui se comienza a subir las imagenes de los productosy los formatos--->
+<div class="container-slider">
+  <div class="slider" id="slider">
+    <div class="slider__section">
+      <img src="img/12.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="slider__img">
+      <div class="slider__content">
+        <!--aqui se comienza la imagen de arriba con su contenido--->
+        <h2 class="slider__title">titulo1</h2>
+        <p class="slider__txt">descuento1</p>
+        <a href="" class="btn-shop">COMPRA AQUI</a>
+      </div>
+      <!--se copian y se pega lo mismo para agregar productos y contenido desde el <div class="slider__section"> hasta el 
+              </div> solo es cambiar el contenido titulo, descuento y la imagen-->
+    </div>
+    <div class="slider__section">
+      <img src="img/11.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="slider__img">
+      <div class="slider__content">
+        <h2 class="slider__title">titulo2</h2>
+        <p class="slider__txt">descuento2</p>
+        <a href="" class="btn-shop">COMPRA AQUI</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="img/10.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="slider__img">
+      <div class="slider__content">
+        <h2 class="slider__title">titulo3</h2>
+        <p class="slider__txt">descuento3</p>
+        <a href="" class="btn-shop">COMPRA AQUI</a>
+      </div>
+    </div>
+    <div class="slider__section">
+      <img src="https://snappygoat.com/b/e031d75f5c05484c31a2e3eb0dcc218b4268620a" alt="" class="slider__img">
+      <div class="slider__content">
+        <h2 class="slider__title">titulo1</h2>
+        <p class="slider__txt">descuento1</p>
+        <a href="" class="btn-shop">COMPRA AQUI</a>
+      </div>
+    </div>
+  </div>
+  <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+  <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</div>
+<main class="main">
+  <div class="container">
+    <!--aqui se comienza a subir las imagenes de los productos y contenido--->
+    <h2 class="main-title">titulo2</h2>
+    <section class="container-products">
+      <div class="product">
+        <img src="img/1.jpg" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">prod1</h3>
+          <span class="product__price">$00000</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="img/2.jpg" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Producto3</h3>
+          <span class="product__price">0000</span>
+        </div>
+        <i class="product-icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="img/3.jpg" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Producto3</h3>
+          <span class="product__price">00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <div class="product">
+        <img src="img/4.jpg" alt="" class="product__img">
+        <div class="product__description">
+          <h3 class="product__title">Producto4</h3>
+          <span class="product__price">$00</span>
+        </div>
+        <i class="product__icon fas fa-cart-plus"></i>
+      </div>
+      <!--aqui se sigue agregando producto y contenido--->
+    </section>
+    <!--aqui se diseña la parte ddonde van testimonios con contenido--->
+	
+	
+	
+    <section class="container__testimonials">
+      <h2 class="section__title">Testimonios</h2>
+      <h3 class="testimonial__title">Felipe </h3>
+      <p class="testimonial__txt">lo mejor que eh podido comprar.</p>
+
+    </section>
+    <section class="container__testimonials">
+      <h2 class="section__title">Testimonios</h2>
+      <h3 class="testimonial__title">Geraldine </h3>
+      <p class="testimonial__txt">muy facil y rapido bastantes responsables y seguros.</p>
+
+    </section>
+    <!--aqui se diseña la parte de productos con su contenido--->
+    <div class="container-editor">
+      <div class="editor__item">
+        <img src="img/5.jpg" alt="" class="editor__img">
+        <p class="editor__circle">titulo5hhhhh</p>
+      </div>
+      <div class="editor__item">
+        <img src="img/6.jpg" alt="" class="editor__img">
+        <p class="editor__circle">titulo6</p>
+      </div>
+    </div>
+    <section class="container-tips">
+      <!--aqui se diseñan y escriben reseñas del productos y de la pagina--->
+      <div class="tip">
+        <i class="far fa-hand-paper"></i>
+        <h2 class="tip__title">Satisfaccion garantizada</h2>
+        <p class="tip__txt">Titulo7</p>
+        <a href="" class="btn-shop">COMPRA AHORA</a>
+      </div>
+      <div class="tip">
+        <i class="fas fa-rocket"></i>
+        <h2 class="tip__title">Compra facil</h2>
+        <p class="tip__txt">Titulo8.</p>
+        <a href="" class="btn-shop">COMPRA AHORA</a>
+      </div>
+      <div class="tip">
+        <i class="fas fa-cog"></i>
+        <h2 class="tip__title">Titulo9</h2>
+        <p class="tip__txt">contenido9.</p>
+        <a href="" class="btn-shop">COMPRA AHORA</a>
+      </div>
+    </section>
+	
+    <!--aqui se activa e script para que le e diseño--->
+    <script src="pagp.js"></script>
+  </div>
+</main>
+<!--aqui se diseñan en el campo informacion sobre la pagina--->
+<footer class="main-footer">
+  <div class="footer__section">
+    <h2 class="footer__title">Sobre Nosotros</h2>
+    <p class="footer__txt">contenido10.</p>
+  </div>
+  <!--aqui se diseñan y escribe informacion de la pagina--->
+  <div class="footer__section">
+    <h2 class="footer__title">Ubicacion</h2>
+    <p class="footer__txt">Colombia</p>
+    <h2 class="footer__title">Contact0</h2>
+    <p class="footer__txt">Cel : 1234567890</p>
+    <p class="footer__txt">Email : xxx@gmail.com</p>
+  </div>
+  <div class="footer__section">
+    <!--esta seccion se dan link para accdeer 
+		   rapidamente a algun contenido de la pagina--->
+    <h2 class="footer__title">Enlace Rapido</h2>
+    <a href="" class="footer__link">Inicio</a>
+    <a href="" class="footer__link">Acerda de</a>
+    <a href="" class="footer__link">Error</a>
+    <a href="" class="footer__link">Tienda</a>
+    <a href="" class="footer__link">Contactanos</a>
+  </div>
+  <div class="footer__section">
+    <!--esta seccion se dan link para acceder y suscribir para promos--->
+    <h2 class="footer__title">Regístrate para recibir tus ofertas</h2>
+    <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y
+      actualizaciones.</p>
+    <input type="email" class="footer__input" placeholder="Entra tu E-mail">
+  </div>
+  <p class="copy">© 2024 VENDETODOONLINE. Todos los Derechos reservados | Diseñado por VENDETODOONLINE</p>
+</footer>
+
+</html
