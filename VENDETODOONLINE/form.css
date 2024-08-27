@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+  /* dandole diseño a la pagina del formulario
+  de contacto */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3c2ced15;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/*aqui comenzamos a darle forma a la tabla del formulario de contacto*/
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+/*le damos color y tamaño a la letra de la cabezera */
+h2 {
+    color: #0b0b0b;
+    font-size: 20px;
+    
+}
+ /*le da color a la parte los titulos de llenado contacto */
+label {
+    color: #e51111;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+   
+}
+/* le da color al relleno y los bordes al campo donde se escribe */
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fbf8fa;
+    border: 0.1px solid #171818;
+    /*le da color a la letra enviar*/
+    color:#1582ee;
+    outline: none;
+}
+/* le da el color a lo que va dentro en el campo e llenado*/
+input::placeholder, textarea ::placeholder {
+    color: #848181;
+    opacity: 0.5;
+}
+/*le da espaciado y forma al boton enviar*/
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+/*le da color a la politica y privacidad, terminos y condiciones*/
+.form-txt a {
+    color: #1d0341;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*aqui le cambia el color a terminos y condiciones
+ y politicas al pasar el cursor por encima */
+.form-txt a:hover {
+    background-color: #27efd1;   
+}
+/*aqui se le da diseño al borde, color y tamaño al boton enviar*/
+.btn {
+    font-size: 20px;
+    color: #1b1919;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+.btn1 {
+    font-size: 20px;
+    color: #1d1f20;
+    border: 0;
+    border-radius: 25px;
+    background-color: #36baee;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+/*aqui cambia de color al pasar el puntero por encima de volver*/
+.btn1:hover {
+    background-color: #27efd1;
+}
+/*aqui cambia de color al pasar el puntero por encima de  enviar*/
+.btn:hover {
+    background-color: #29f3d8;
+    
+}
+/* aqui se le esta dando diseños al formulario contacto*/
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px;
+    }
+}

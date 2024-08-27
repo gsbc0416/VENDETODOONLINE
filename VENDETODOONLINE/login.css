@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+/* dandole formato a la pagina */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #5f6769;
+}
+
+/* efectos para el contenedor de pantalla completa */
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    /* agregamos la direccion y diseño de la imagen de fondo */
+    background-image: url(img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* contenedor del login a la izquierda */
+#contenedorcentrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    
+    min-width: 380px;
+    max-width: 900px;
+    width: 90%;
+    
+    background-color: transparent;
+    /* se le da la opacidad al formulario */
+    opacity: ;
+    filter: alpha(opacity=);
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/* formulario de login */
+
+#login {
+    /*le da ancho y diseño al formualario de incio*/
+    width: 100%;
+    max-width: 320px;
+    min-width: 320px;
+    padding: 30px 30px 30px 30px;
+    background-color: transparent;
+
+    /*esto le da diseño a los bordes tranasparentes y colores de login de inicio*/
+    -webkit-box-shadow: 5px 5px 5px 5px rgba(243, 129, 129, 0.15);
+    -moz-box-shadow: 5px 5px 5px 5px rgba(247, 124, 124, 0.15);
+    box-shadow: 0px 0px 0px 5px rgba(247, 56, 56, 0.15);
+
+    /*esto le da diseño a las puntas de login de inicio*/
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+    
+    opacity: 1;
+    filter: alpha(opacity=0);
+}
+
+#login label {
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 120%;
+    color:#00070a;
+    
+    margin-top: 15px;
+}
+
+#login input {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color: #010a0f;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+    font-family: 'Overpass', sans-serif;
+    color: #E4E4E4;
+}
+
+#login button {
+    font-family: 'Overpass', sans-serif;
+    font-size: 110%;
+    color:#1b262c;
+    width: 100%;
+    height: 40px;
+    border: none;
+    
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    /*le damos color al campo inicio de sesion*/
+    background-color: #09f3f3;
+    
+    margin-top: 10px;
+}
+/*le damos color al pasar puntero por el boton inico de sesion*/
+#login button:hover {
+    background-color: #11a4ee;
+    color:#dfcdc3;
+}
+
+#derecho {
+  
+    text-align: ;
+    width: 100%;
+    opacity: 0.90;
+    filter: alpha(opacity=90);
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+    
+}
+/*diseñamos el tamaño,posicion y color de la letra de VENDETODOONLINE*/
+.titulo {
+    font-size: 200%;
+    color:#0ef165;
+    text-align: center;
+}
+
+.logo-empresa img {
+    width: 100%;
+}
+/*Le damos el color a las lineas de incio de sesion*/
+hr {
+    border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #dfcdc3;
+    
+}
+/*Le damos diseño al pie de vendetodoonline*/
+.pie-form {
+    font-size: 100%;
+    text-align: center;    
+    margin-top: 15px;
+}
+/*diseñamos el tamaño y color de lo que esta dentro de las lineas*/
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: #09f3f3;
+    margin-bottom: 3px;
+}
+/*le damos el color al pasar el puntero sobre la escritura*/
+.pie-form a:hover {
+    color: #010d06;
+}
+
+  
+/* aqui en adelante es el diseño del contenedor de los item de productos*/
+
+@media all and (max-width: 775px) {
+    #contenedorcentrado {
+        opacity: 1;
+        filter: alpha(opacity=50);
+        
+        flex-direction: column-reverse;
+
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+
+        background-color: transparent;
+
+        border-radius: 0px 0px 0px 0.5px;
+        -moz-border-radius: 0px 0px 0px 0px;
+        -webkit-border-radius: 0px 0px 0px 1px;
+
+        -webkit-box-shadow: 0px 0px 0px 0.5px rgba(238, 24, 24, 0.15);
+        -moz-box-shadow: 0px 0px 0px 0.5px rgba(241, 16, 16, 0.15);
+        box-shadow: 0px 0px 0px 0.5px rgba(210, 14, 14, 0.15);
+
+        padding: 30px;
+        box-sizing: border-box;
+    
+    
+    #login {
+        margin: 0 auto;
+    }
+    
+    #derecho {
+        padding:20px 20px 20px 20px;
+    }
+    
+    #login label {
+        text-align: left;
+    }
+}
+    <!--  diseño a productos de la tienda -->

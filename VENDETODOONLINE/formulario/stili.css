@@ -1,0 +1,150 @@
+/* comenzaños a dar diseño al formulario*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Añadir fondo de imagen al body */
+body {
+  
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+    font-family: Arial, sans-serif; /* Ajusta la fuente, si es necesario */
+}
+
+/* Opcional: Añadir estilo al formulario para mejorar la visibilidad */
+form {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    max-width: 800px; /* Ancho máximo del formulario */
+    margin: 20px auto; /* Centra el formulario en la página */
+}
+
+
+/* comenzaños a lo que va dentro el formulario osea la cajita*/
+body {
+    
+    font-family: Arial, Helvetica, sans-serif; /*la letra q llevara el formulario*/
+    background-color: #e4e4e4; /*el color del placeholder en el formulario*/
+    display: flex;
+    align-items: center;/*para centrar el formulario*/
+    justify-content: center;/*para centrar el formulario*/
+    min-height: 100vh; /*le da el tamaño q se vera el cuadro del formulario*/
+}
+
+form {
+    background-color: f5f5f5f; /*color al formulario*/
+    padding: 58px;
+    width: 428px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+/* comenzamos a titulo*/
+form h2 {
+    font-size: 20px; /* le da tamaño a la letra*/
+    color: #67656c;
+    text-transform: uppercase;
+    margin-bottom: 25px; /*aqui se le da altura al titulo */
+}
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;/*esto es para redondear el color de fondo*/
+    background: linear-gradient(
+        90deg,
+        rgba(153,26,123,1) 0%
+        rgba(117,30,156,1) 50%
+    );
+    color: #fcfef7;/*color y estilos para los iconos*/
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+/*se le da color a los input*/
+.input-container > input {
+    padding: 10px 10px 10px 6px; /*diseños a la altura y distancias las letras q salen en placeholder*/
+    width: 100%; /* le da el ancho a los campos input*/
+    margin-bottom: 8px; /* le da espacios entre los campos input*/
+    border-radius: 10px; /* le da el redondeo a los bordes del campo input*/
+    background-color: transparent;
+    border: 2px solid #161515;/* le da el grosor a los bordes del campo input*/
+    font-size: 20px; /* le da el tamaño a la letra q se escribe en los input*/
+    outline: none;
+    color: #1e1e1e;
+}
+/*se le a diseño a las letras dentro del input*/
+::placeholder {
+    color: #a0a0a0;
+    font-size: 20px; /* le da el tamaño a l titulo que sale en los campos input*/
+}
+
+form a {
+    display: block;
+    color: #3323e7;
+    font-size: 100px;
+    text-decoration: none;
+    margin-bottom: 2px;/* le da diseño y altura al cuadro del formulario*/
+
+}/*se le a diseño a los botones del formulario*/
+.btn {
+    background: linear-gradient(
+        90deg,
+        rgba(153,26,123,1) 0%
+        rgba(117,30,156,1) 50%
+    );
+    padding: 10px;/* le da el ancho al campo boton*/
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);/* le a la sombra y color efecto a los botones */ 
+    border-radius: 10px;/* le da la curva a los bordes a los botones*/
+    margin-bottom: 10px;/* les da el espacio a los botones*/
+    width: 100%; /*les da el ancho a los botones*/
+    color: #7a816b;/* le da el color a la letra de los botones*/
+    font-size: 20px;/* les da un ancho y tamaño al compo boton*/
+    cursor: pointer;
+}
+
+
+/* Efecto al pasar el cursor sobre el botón */
+.btn:hover {
+    background: linear-gradient(
+        90deg,
+        rgba(117,30,156,1) 0%,
+        rgba(153,26,123,1) 50%
+    ); /* Puedes cambiar el gradiente o el color del fondo aquí */
+    color: #ffffff; /* Cambia el color del texto si deseas */
+}
+
+/*se le a diseño a las alertas*/
+.success {
+    position: absolute;
+    top: 30px;
+    color: #00a735;
+    font-size: 28px;
+}
+/*se le da al color del error*/
+.error {
+    position: absolute;
+    top: 40px; /* le da el la altura posiscion arribaen el formualrio a la letra error*/
+    color: #f10b0b;
+    font-size: 20px; /* le da el tamaño a la letra error*/
+
+
+  
+}
+/*para que se adapte a la pantalla*/
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        width: 340px;
+    }
+}
